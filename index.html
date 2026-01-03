@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Amigo Tops Coach</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#22c55e',
+              'background-dark': '#051b11',
+              'surface-dark': '#0a261a',
+              'neon-green': '#2ff20d',
+              'sims-yellow': '#f2e205',
+              'sims-red': '#f20d0d',
+            },
+            fontFamily: {
+              display: ['Space Grotesk', 'sans-serif'],
+              body: ['Noto Sans', 'sans-serif'],
+            },
+            boxShadow: {
+              'neon': '0 0 10px rgba(47, 242, 13, 0.5), 0 0 20px rgba(47, 242, 13, 0.3)',
+              'neon-sm': '0 0 5px rgba(47, 242, 13, 0.4)',
+            },
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #051b11;
+        color: white;
+        scrollbar-width: thin;
+        scrollbar-color: #0a261a #051b11;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #051b11;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #0a261a;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #2ff20d;
+      }
+      .glow-text {
+        text-shadow: 0 0 10px rgba(47, 242, 13, 0.6);
+      }
+      .blink {
+        animation: blink-animation 1s steps(5, start) infinite;
+      }
+      @keyframes blink-animation {
+        to { visibility: hidden; }
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-BfxV1q4w.js"></script>
+</head>
+  <body class="selection:bg-neon-green selection:text-black">
+    <div id="root"></div>
+</body>
+</html>
